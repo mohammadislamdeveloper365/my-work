@@ -18,7 +18,7 @@ CSS Framework/Library
     --primary-color:rgb(244, 206, 106,0.1);
     --secondary-color:#FF6263;
     --color-danger:#E21717;
-    --color-dark: #242B2E;
+    --color-dark: black;
     --color-light:rgb(255, 255, 255);
     --color-info:#8D3DAF;
     --color-light-dark:rgb(117, 130, 131,0.1);
@@ -124,12 +124,11 @@ Navigation Bar
 }
 
 .nav-item {
-    display:flex;
     padding:1vw;
 }
 
 .nav-link {
-    color:var(--primary-color);
+    color:var(--color-light);
     text-decoration: none;
 }
 /*
@@ -370,6 +369,10 @@ Flex items Alignment
 
 .justify-space-between {
     justify-content: space-between;
+}
+
+.justify-content-end {
+    justify-content: end;
 }
 
 .justify-space-around {

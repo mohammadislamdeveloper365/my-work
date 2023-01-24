@@ -1,0 +1,18 @@
+.my-work-header {
+    position:sticky;
+    position:-webkit-sticky;
+    top:0px;
+}
+.search-bar {
+    background-color: white;
+    padding:0.5vw;
+    border-radius: 0.5rem;
+}
+.search-input {
+    border:none;
+    outline:none;
+}
+
+.search-input:hover {
+    outline:none;
+}
