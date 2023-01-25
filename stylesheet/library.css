@@ -8,6 +8,10 @@ CSS Framework/Library
     margin:0px;
     padding:0px;
 }
+
+:root {
+    font-size:100%;
+}
 /*
 ----------------------
 CSS Framework/Library
@@ -15,11 +19,11 @@ CSS Framework/Library
 */
 :root {
     --primary-color:#03203C;
-    --secondary-color:#6A1B4D;
+    --secondary-color:rgb(3, 32, 60,0.2);
     --color-danger:#E21717;
     --color-dark: black;
     --color-light:rgb(255, 255, 255);
-    --color-info:#8D3DAF;
+    --color-info:#EDBF69;
     --color-light-dark:rgb(117, 130, 131,0.1);
 }
 /*
@@ -48,8 +52,32 @@ Container
 Typography
 --------------------
 */
+h6{
+    font-size:1rem;
+}
 
+h5 {
+    font-size:1.6rem;
+}
 
+h4 {
+    font-size:2rem;
+}
+
+h3 {
+    font-size:2.25rem;
+}
+
+h2 {
+    font-size:3rem;
+}
+h1 {
+    font-size:3.5rem;
+}
+
+p,a{
+    font-size:1.5rem;
+}
 /*
 --------------------
 Grid View - Columns
@@ -86,6 +114,10 @@ Navigation Bar
     display:flex;
     list-style-type: none;
     padding:0px;
+}
+
+.flex-column {
+    flex-direction: column;
 }
 
 .nav-item {
@@ -151,6 +183,10 @@ COLOR--BACKGROUND COLOR
 
 .bg-light {
     background-color:var(--color-light);
+}
+
+.bg-light-dark {
+    background-color: var(--color-light-dark);
 }
 
 /*
@@ -255,7 +291,9 @@ margin , padding
 .p-x-2 {
     padding:0 calc(1rem + 0.5vw);
 }
-
+.p-x-4 {
+    padding:0 calc(2rem + 1vw)
+}
 /*
 --------------
 Display Value
@@ -364,6 +402,9 @@ RESPONSIVENESS
 -----------------
 */
 @media only screen and (min-width:1px){
+    :root {
+        font-size:50%;
+    }
     /*mobile devices*/
     .container-xs {
         width:100%;
@@ -385,6 +426,9 @@ RESPONSIVENESS
 }
 
 @media only screen and (min-width:576px){
+    :root {
+        font-size:62.5%;
+    }
     /*Tablet*/
     .container-sm {
         width:100%;
@@ -406,6 +450,9 @@ RESPONSIVENESS
 
 }
 @media only screen and (min-width:768px){
+    :root {
+        font-size:75%;
+    }
     /*Medium Size Laptop*/
     .container-md {
         width:100%;
@@ -427,6 +474,9 @@ RESPONSIVENESS
 }
 
 @media only screen and (min-width:992px){
+    :root {
+        font-size:87.5%;
+    }
     /*Desktop and Laptop*/
     .container-lg {
         width:100%;
